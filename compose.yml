@@ -1,0 +1,9 @@
+services:
+  twingate-connector:
+    container_name: twingate-outrageous-wombat
+    restart: always
+    image: twingate/connector:1
+    environment:
+      - TWINGATE_NETWORK=${TWINGATE_NETWORK}
+      - TWINGATE_ACCESS_TOKEN=${TWINGATE_ACCESS_TOKEN}
+      - TWINGATE_REFRESH_TOKEN=${TWINGATE_REFRESH_TOKEN}
